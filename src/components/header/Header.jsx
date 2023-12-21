@@ -7,8 +7,8 @@ function Header() {
     <>
       <nav className="bg-zinc-800 p-4">
         <div className="container mx-auto">
-          <div className="flex items-center justify-between">
-            <Link to="#" className="w-10" >
+          <div className="flex items-center justify-between sticky">
+            <Link to="#" className="w-10 hover:scale-1" >
               <img src="https://i.pinimg.com/236x/0f/93/79/0f93798d7dbd239809f07f7b00e9891e.jpg" alt="" />
             </Link>
             <div >
@@ -17,7 +17,7 @@ function Header() {
                   <NavLink
                   to="/"
                     className={({ isActive }) =>
-                      `text-white ${isActive ? "text-red-600" : "text-white"}`
+                      ` ${isActive ? "text-red-400" : "text-white"} hover:text-red-400`
                     }
                   >
                     Home
@@ -27,7 +27,7 @@ function Header() {
                   <NavLink
                   to="/about"
                     className={({ isActive }) =>
-                      `text-white ${isActive ? "text-red-600" : "text-white"}`
+                      ` ${isActive ? "text-red-400" : "text-white"} hover:text-red-400`
                     }
                   >
                     About
@@ -38,7 +38,7 @@ function Header() {
                 
                   to="/contact"
                     className={({ isActive }) =>
-                      `text-white ${isActive ? "text-red-600" : "text-white"}`
+                      ` ${isActive ? "text-red-400" : "text-white"} hover:text-red-400`
                     }
                   >
                     Contact
@@ -46,11 +46,11 @@ function Header() {
                 </li>
                 <li>
                   <NavLink 
-                  to="/service"
+                  to="/github"
                   className={({isActive}) =>
-                  `text-white ${isActive ? 'text-red-600' : 'text-white'}`
+                  ` ${isActive ? 'text-red-400' : 'text-white'} hover:text-red-400`
                   }>
-                    Services
+                    Github
                   </NavLink>
                 </li>
 

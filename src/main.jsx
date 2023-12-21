@@ -8,6 +8,7 @@ import Home from './components/home/Home.jsx'
 import About from './components/about/About.jsx'
 import Contact from './components/contact/Contact.jsx'
 import Service from './components/service/Service.jsx'
+import Github from './components/github/Github.jsx'
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
     {
       path: "service",
       element: <Service/>
+    },
+    {
+      path : "github",
+      element : <Github/>
     }
 
     ]
