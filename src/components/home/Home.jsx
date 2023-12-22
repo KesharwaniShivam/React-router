@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Link } from 'react-router-dom';
-
-
+import { motion } from "framer-motion"
        
       export default function Home() {
+        const ref = useRef(null)
     return (
-        <div className="mx-auto w-full max-w-7xl">
-            <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
+        <motion.div drag whileDrag={{scale :1.1}} dragConstraints={ref}>
+      <div ref={ref} className="mx-auto w-full max-w-7xl">
+            <div className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
                 <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-52 mx-auto sm:px-6 lg:px-8">
                     <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
                         <h2 className="text-4xl font-bold sm:text-5xl">
@@ -32,18 +33,21 @@ import { Link } from 'react-router-dom';
                         </Link>
                     </div>
                 </div>
-
-                <div className="absolute inset-0 w-full sm:my-10 sm:pt-1 pt-12 h-full ">
+               
+               
+                <div className="absolute inset-0 w-full sm:my-10 sm:pt-1 4  h-full ">
                     <img className="w-96" src="https://i.pinimg.com/236x/f7/ee/d9/f7eed96c7bbdd5ba8d639ca0bfcf8931.jpg" alt="image1" />
                 </div>
-            </aside>
-
+          
+                </div>
             <div className="grid  place-items-center sm:mt-8">
                 <img className="sm:w-96 w-48" src="https://i.pinimg.com/236x/b3/20/6d/b3206d84aa3714b4a7bb3d74da868ba4.jpg" alt="image2" />
             </div>
-
+           
             <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">Never F Up!</h1>
-        </div>
+            </div>
+        </motion.div>
+        
     );
 }
  

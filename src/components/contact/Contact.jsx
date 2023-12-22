@@ -4,6 +4,7 @@ import { RiServiceLine } from "react-icons/ri";
 import { ImLocation2 } from "react-icons/im";
 import { FaTruckDroplet } from "react-icons/fa6";
 import { MdSupportAgent } from "react-icons/md";
+import { motion } from "framer-motion"
 
 function Contact() {
     return (
@@ -14,27 +15,31 @@ function Contact() {
 
             <div className=''>
                 <ul className=' m-10 flex flex-wrap justify-evenly  '>
-                    <li className='rounded-xl p-3 flex items-center justify-center w-44 h-44 bg-red-200 cursor-pointer hover:bg-red-300'>
+                    <motion.li drag whileDrag={{scale:1.2}} className='rounded-xl p-3 flex items-center justify-center w-44 h-44 bg-red-200 cursor-pointer hover:bg-red-300'>
                         <span className='text-6xl'>
                             <IoCloudDownloadOutline />
                         </span>
-                    </li><li className='rounded-xl p-3 flex items-center justify-center w-44 h-44 bg-red-200 cursor-pointer hover:bg-red-300'>
+                    </motion.li>
+                    <motion.li drag whileDrag={{scale:1.2}} className='rounded-xl p-3 flex items-center justify-center w-44 h-44 bg-red-200 cursor-pointer hover:bg-red-300'>
                         <span className='text-6xl'>
                             < RiServiceLine />
                         </span>
-                    </li><li className='rounded-xl p-3 flex items-center justify-center w-44 h-44 bg-red-200 cursor-pointer hover:bg-red-300'>
+                    </motion.li>
+                    <motion.li drag whileDrag={{scale:1.2}} className='rounded-xl p-3 flex items-center justify-center w-44 h-44 bg-red-200 cursor-pointer hover:bg-red-300'>
                         <span className='text-6xl'>
                             <ImLocation2 />
                         </span>
-                    </li><li className='rounded-xl p-3 flex items-center justify-center w-44 h-44 bg-red-200 cursor-pointer hover:bg-red-300'>
+                    </motion.li>
+                    <motion.li drag whileDrag={{scale:1.2}} className='rounded-xl p-3 flex items-center justify-center w-44 h-44 bg-red-200 cursor-pointer hover:bg-red-300'>
                         <span className='text-6xl'>
                             <FaTruckDroplet />
                         </span>
-                    </li><li className='rounded-xl p-3 flex items-center justify-center w-44 h-44 bg-red-200 cursor-pointer hover:bg-red-300'>
+                    </motion.li>
+                    <motion.li drag whileDrag={{scale:1.2}} className='rounded-xl p-3 flex items-center justify-center w-44 h-44 bg-red-200 cursor-pointer hover:bg-red-300'>
                         <span className='text-6xl'>
                             <MdSupportAgent />
                         </span>
-                    </li>
+                    </motion.li>
 
                 </ul>
             </div>
